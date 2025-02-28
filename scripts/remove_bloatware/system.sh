@@ -34,10 +34,13 @@ bloatware=(
     "system/priv-app/GuideMe"
 #     "system/priv-app/MotoLauncher" # If you delete it, the "home" gesture stops working for some reason
     "system/priv-app/MotoCamera"
+    "system/priv-app/ManagedProvisioning"
+#     "system/priv-app/Wallpaper" #???
+    "system/priv-app/ONS"
 
     "system/preinstall/facebook"
     "system/preinstall/instagram"
-    "system/preinstall/MotoSpaces"
+    "system/preinstall/MotoSpace"
 )
 
 if [ "$#" -ne 1 ]; then

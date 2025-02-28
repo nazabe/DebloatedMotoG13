@@ -19,7 +19,9 @@ bloatware=(
     "priv-app/FamilyLinkParentalControls"
     "priv-app/GooglePartnerSetup"
     "priv-app/AndroidAutoStub"
-    "priv-app/SettingsIntelligence"
+#     "priv-app/AndroidSettingsIntelligence"
+#     "priv-app/SettingsIntelligence" # If you remove it, you will lose the search in the settings
+    "priv-app/AndroidSystemIntelligence" # An app that enables smart and personalized features on your Android phone using machine learning and Private Compute Core
     "priv-app/GoogleRestore"
     "priv-app/Turbo"
     "priv-app/Velvet"
@@ -38,6 +40,8 @@ bloatware=(
     "app/GoogleLocationHistory"
     "app/Photos"
     "app/Videos"
+    "app/GoogleOneTimeInitializer"
+#     "app/com.google.android.modulemetadata"
 )
 
 if [ "$#" -ne 1 ]; then

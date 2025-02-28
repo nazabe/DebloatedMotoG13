@@ -18,9 +18,12 @@ bloatware=(
     "priv-app/MotoCare"
     "priv-app/VoiceUnlock"
     "priv-app/VoiceCommand"
+    "priv-app/SetupWizzard"
+    "priv-app/MotoNotification"
 
     "app/OraeuIntegration"
-    "app/TelcelIntefration"
+    "app/TelcelIntegration"
+    "app/ClaroIntegration"
 )
 
 if [ "$#" -ne 1 ]; then
