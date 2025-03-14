@@ -25,12 +25,22 @@ set_permissions() {
 }
 
 for item in "${files[@]:0:2}"; do
+    if [ ! -f "${item}" ]; then
+        echo "[❌] Signature spoofing error"
+        echo "[❌] File ${item} not found!"
+        exit 1
+    fi
     echo "[🔵] Copying patched ${item} to /system/framework"
     sudo cp "scripts/signature_spoof/${item}" "${MOUNT_DIR}${FRAMEWORK_DIR}"
     set_permissions "${MOUNT_DIR}${FRAMEWORK_DIR}/${item}"
 done
 
 for item in "${files[@]:2}"; do
+    if [ ! -f "${item}" ]; then
+        echo "[❌] Signature spoofing error"
+        echo "[❌] File ${item} not found!"
+        exit 1
+    fi
     echo "[🔵] Copying patched ${item} to /system/framework/oat/arm64"
     sudo cp "scripts/signature_spoof/${item}" "${MOUNT_DIR}${DEX_DIR}"
     set_permissions "${MOUNT_DIR}${DEX_DIR}/${item}"
