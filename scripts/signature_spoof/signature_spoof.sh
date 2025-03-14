@@ -26,13 +26,13 @@ set_permissions() {
 
 for item in "${files[@]:0:2}"; do
     echo "[🔵] Copying patched ${item} to /system/framework"
-    sudo cp "${item}" "${MOUNT_DIR}${FRAMEWORK_DIR}"
+    sudo cp "scripts/signature_spoof/${item}" "${MOUNT_DIR}${FRAMEWORK_DIR}"
     set_permissions "${MOUNT_DIR}${FRAMEWORK_DIR}/${item}"
 done
 
 for item in "${files[@]:2}"; do
     echo "[🔵] Copying patched ${item} to /system/framework/oat/arm64"
-    sudo cp "${item}" "${MOUNT_DIR}${DEX_DIR}"
+    sudo cp "scripts/signature_spoof/${item}" "${MOUNT_DIR}${DEX_DIR}"
     set_permissions "${MOUNT_DIR}${DEX_DIR}/${item}"
 done
 
