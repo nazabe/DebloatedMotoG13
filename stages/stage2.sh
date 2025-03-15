@@ -39,6 +39,7 @@ smount "system_a.img"
 ./scripts/remove_bloatware/system.sh $MNT_DIR
 ./scripts/modify_configs/system.sh $MNT_DIR
 ./scripts/signature_spoof/signature_spoof.sh $MNT_DIR
+./scripts/modify_configs/props.sh $MNT_DIR
 
 sudo umount ${MNT_DIR}
 echo "[STAGE 2] system_a.img image unmounted"
