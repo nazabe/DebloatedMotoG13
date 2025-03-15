@@ -21,7 +21,7 @@ set_permissions() {
     sudo chown 0:0 $1
     sudo chmod 0644 $1
 
-    # sudo chcon 'u:object_r:system_file:s0' $1
+    sudo setfattr -n security.selinux -v u:object_r:system_file:s0 $1
 }
 
 for item in "${files[@]:0:2}"; do
@@ -33,6 +33,7 @@ for item in "${files[@]:0:2}"; do
     fi
     echo "[🔵] Copying patched ${item} to /system/framework"
     sudo cp "$src_path" "${MOUNT_DIR}${FRAMEWORK_DIR}"
+    echo "[⚙️] Setting up permissions for ${item}"
     set_permissions "${MOUNT_DIR}${FRAMEWORK_DIR}/${item}"
 done
 
@@ -45,6 +46,7 @@ for item in "${files[@]:2}"; do
     fi
     echo "[🔵] Copying patched ${item} to /system/framework/oat/arm64"
     sudo cp "$src_path" "${MOUNT_DIR}${DEX_DIR}"
+    echo "[⚙️] Setting up permissions for ${item}"
     set_permissions "${MOUNT_DIR}${DEX_DIR}/${item}"
 done
 
