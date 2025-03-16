@@ -9,6 +9,7 @@ fi
 MOUNT_DIR=$1
 ETC_PATH="${MOUNT_DIR}/system/etc"
 EMPTY_CONFIG="configs/empty_config.xml"
+EMPTY_FILE="configs/appmanager.conf"
 
 if [ "$#" -ne 1 ]; then
     echo "[❌] Incorrect arguments!"
@@ -36,3 +37,5 @@ done
 # modify sysconfig configs
 echo "[🔵] Writing an empty config to ${ETC_PATH}/sysconfig/enable-disable-preload-apps.xml"
 sudo cp "$EMPTY_CONFIG" "${ETC_PATH}/sysconfig/enable-disable-preload-apps.xml"
+echo "[🔵] Writing an empty config to ${ETC_PATH}/appmanager.conf"
+sudo cp "$EMPTY_FILE" "${ETC_PATH}/appmanager.conf"
