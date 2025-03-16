@@ -13,6 +13,16 @@ BUILD_PROP="${MOUNT_DIR}/system/build.prop"
 
 ADD_PROP_LIST=(
     "persist.camera.HAL3.enabled=1" # Enables Camera2 API
+    "debug.hwui.render_dirty_regions=false" # disable dirty region (Mali GPU)
+    "debug.sf.skip_dirty_regions=1"
+    "debug.sf.nobootanimation=1" # Disable BootAnimation
+    "persist.adb.notify=0" # Disable ADB connection notification
+    "ro.max.fling_velocity=18000" # Max swipe speed
+    "ro.min.fling_velocity=12000" # Min swipe speed
+    "debug.sf.hw=1" # Using hardware acceleration
+    "ro.telephony.call_ring.delay=0"
+    "ro.media.enc.jpeg.quality=100"
+    "ro.audio.silent=0"
 )
 
 
