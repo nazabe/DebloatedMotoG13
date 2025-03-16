@@ -55,6 +55,7 @@ echo "[STAGE 2] product_a.img image unmounted"
 # system_ext_a.img
 smount "system_ext_a.img"
 
+./scripts/modify_configs/system_ext.sh $MNT_DIR
 ./scripts/remove_bloatware/system_ext.sh $MNT_DIR
 
 sudo umount ${MNT_DIR}
