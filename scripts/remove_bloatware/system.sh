@@ -40,7 +40,7 @@ bloatware=(
 
     "system/preinstall/facebook"
     "system/preinstall/instagram"
-    "system/preinstall/MotoSpace"
+    "system/preinstall/MotoSpaces"
 )
 
 if [ "$#" -ne 1 ]; then
