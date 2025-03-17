@@ -23,6 +23,7 @@ ADD_PROP_LIST=(
     "ro.telephony.call_ring.delay=0"
     "ro.media.enc.jpeg.quality=100"
     "ro.audio.silent=0"
+    "ro.setupwizard.mode=DISABLE" # Skip SetupWizard (Temporary solution for microg)
 )
 
 
