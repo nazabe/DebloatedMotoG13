@@ -30,6 +30,7 @@ bloatware=(
     "system/priv-app/3c_ota"
     "system/priv-app/Claro"
     "system/priv-app/ClaroStub"
+    "system/priv-app/SysDLL" # Useless app that sends requests to carier servers to know if the device has to be locked (if the IMEI is banned)
     "system/priv-app/IronSource"
     "system/priv-app/GuideMe"
 #     "system/priv-app/MotoLauncher" # If you delete it, the "home" gesture stops working for some reason
