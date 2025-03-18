@@ -27,6 +27,13 @@ REMOVE_CONFIGS=(
     "${ETC_PATH}/default-permissions/default-permissions-ironsource.xml"
     "${ETC_PATH}/init/facebook-appmanager.rc"
 
+    "${ETC_PATH}/permissions/privapp-permissions-facebook.xml"
+    "${ETC_PATH}/permissions/privapp-permissions-com.motorola.brapps.xml" # Software Centre?
+    "${ETC_PATH}/permissions/privapp-permissions-co.sitic.pp.xml" # We don't allow background apps from leaking IMEIs, not even by accidentally it.
+    "${ETC_PATH}/permissions/permission_SM_com.telcel.contenedor.xml"
+    "${ETC_PATH}/permissions/permission_SM_com.claroColombia.contenedor.xml"
+    "${ETC_PATH}/permissions/com.motorola.software.guideme.xml"
+    "${ETC_PATH}/permissions/com.motorola.motosignature.xml" # We never had it to begin with anyway
 )
 
 for item in "${REMOVE_CONFIGS[@]}"; do
