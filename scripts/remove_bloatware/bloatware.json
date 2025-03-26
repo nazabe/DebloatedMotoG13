@@ -1,0 +1,390 @@
+{
+  "product_a": [
+    {
+      "path": "priv-app/OrangeAppCenter",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/MotoHelpfeedback",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/MotorolaIgniteAgent",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/GameMode",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/AmericaMovilIgniteAgent",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/MobileApplicationsManager",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/PayJoyAccess",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "FamilyLinkParentalControls",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "GooglePartnerSetup",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "AndroidAutoStub",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/AndroidSystemIntelligence",
+      "description": "An app that enables smart and personalized features on your Android phone using machine learning and Private Compute Core",
+      "remove": true
+    },
+    {
+      "path": "priv-app/AndroidSettingsIntelligence",
+      "description": "If you remove it, you will lose the search in the settings",
+      "remove": false
+    },
+    {
+      "path": "priv-app/SettingsIntelligence",
+      "description": "If you remove it, you will lose the search in the settings",
+      "remove": false
+    },
+    {
+      "path": "priv-app/GoogleRestore",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/Turbo",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/Velvet",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/YouTube",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/Meet",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/YTMusic",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/com.google.mainline.adservices",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/com.google.mainline.telemetry",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/Drive",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/Gmail2",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/Maps",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/PlayAutoInstallConfig",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/Chrome",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/CalculatorGoogle",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/GoogleLocationHistory",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/Photos",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/Videos",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/GoogleOneTimeInitializer",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/com.google.android.modulemetadata",
+      "description": "",
+      "remove": false
+    }
+  ],
+
+  "system_a": [
+    {
+      "path": "system/app/CompanionDeviceManager",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/app/facebook_appmanager",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/app/MotoWidget",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/app/WallpaperBackup",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/app/BasicDreams",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/app/MotoSignatureApp",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/app/ARCore",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/LiveWallpapersPicker",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/LenovoID",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/facebook_installer",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/facebook_services",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/TaboolaOdy",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/PartnerBookmarksProvider",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/GlanceMotorola",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/Telcel",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/BRApps",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/ChromeHomePageProviderMoto",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/3c_ota",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/Claro",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/ClaroStub",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/SysDLL",
+      "description": "Useless app that sends requests to carrier servers to know if the device has to be locked (if the IMEI is banned)",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/IronSource",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/GuideMe",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/MotoLauncher",
+      "description": "If you delete it, the 'home' gesture stops working for some reason",
+      "remove": false
+    },
+    {
+      "path": "system/priv-app/MotoCamera",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/ManagedProvisioning",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/priv-app/ONS",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/preinstall/facebook",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/preinstall/instagram",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "system/preinstall/MotoSpaces",
+      "description": "",
+      "remove": true
+    }
+  ],
+
+  "system_ext_a": [
+    {
+      "path": "priv-app/PAKS",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/PaksNotification",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/DemoMode",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/GoogleFeedback",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/MotoLiveWallpaper3",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/MotoNotifications",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/MotoCare",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/VoiceUnlock",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/VoiceCommand",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/SetupWizzard",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "priv-app/MotoNotification",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/OraeuIntegration",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/TelcelIntegration",
+      "description": "",
+      "remove": true
+    },
+    {
+      "path": "app/ClaroIntegration",
+      "description": "",
+      "remove": true
+    }
+  ]
+}

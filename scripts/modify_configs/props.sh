@@ -2,14 +2,13 @@
 
 if [ "$#" -ne 1 ]; then
     echo "[❌] Incorrect arguments!"
-    echo "     Using: $0 <MOUNT_DIR>"
+    echo "     Using: $0 <BASE_DIR>"
     exit 1
 fi
 
-MOUNT_DIR=$1
-BUILD_PROP="${MOUNT_DIR}/system/build.prop"
+BASE_DIR=$1
 
-
+BUILD_PROP="${BASE_DIR}/system_a/system/build.prop"
 
 ADD_PROP_LIST=(
     "persist.camera.HAL3.enabled=1" # Enables Camera2 API
@@ -29,20 +28,20 @@ ADD_PROP_LIST=(
 
 append_prop() {
     if ! sudo grep -q "${1}" "$BUILD_PROP"; then
-        echo "[🟢] Adding prop '${1}' to "${2}""
+        echo "[+] Adding prop '${1}' to "${2}""
         sudo sed -i "$ a ${1}" "$BUILD_PROP"
     else
-        echo "[✔️] Prop '${1}' is already present in "${2}""
+        echo "[i] Prop '${1}' is already present in "${2}""
     fi
 }
 
 
 remove_prop() {
     if sudo grep -q "^${1}" "${2}"; then
-        echo "[🔴] Removing prop '${1}' from "${2}""
+        echo "[-] Removing prop '${1}' from "${2}""
         sudo sed -i "/^${1}/d" "${2}"
     else
-        echo "[✔️] Prop '${1}' is not present in "${2}""
+        echo "[i] Prop '${1}' is not present in "${2}""
     fi
 }
 
@@ -53,13 +52,13 @@ edit_prop() {
     if sudo grep -q "${prop_name}=" "${2}"; then
         current_value=$(sudo grep "^${prop_name}=" "${2}" | cut -d'=' -f2)
         if [ "$current_value" != "$new_value" ]; then
-            echo "[🔵] Editing prop '${prop_name}' in "${2}""
+            echo "[=] Editing prop '${prop_name}' in "${2}""
             sudo sed -i "s/${prop_name}=.*/${prop_name}=${new_value}/" "${2}"
         else
-            echo "[✔️] Prop '${prop_name}' already has the desired value (${new_value}) in "${2}""
+            echo "[*] Prop '${prop_name}' already has the desired value (${new_value}) in "${2}""
         fi
     else
-        echo "[✔️] Prop '${prop_name}' is not present in "${2}""
+        echo "[i] Prop '${prop_name}' is not present in "${2}""
     fi
 }
 
