@@ -47,4 +47,4 @@ echo " "
 ./scripts/signature_spoof/signature_spoof.sh $MNT_BASE
 
 echo "All images unmounted"
-# sudo umount ${MNT_BASE}/*
+sudo umount ${MNT_BASE}/*
