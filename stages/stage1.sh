@@ -26,7 +26,7 @@ if ! simg2img "$SUPER_IMAGE" "$SUPER_RAW"; then
 fi
 
 echo "[STAGE 1] Unpacking super raw image"
-if ! lpunpack "$SUPER_RAW" "$UNPACKED_DIR"; then
+if ! python3 /usr/local/bin/lpunpack "$SUPER_RAW" "$UNPACKED_DIR"; then
     echo "[❌] Failed to unpack super image"
     exit 1
 fi

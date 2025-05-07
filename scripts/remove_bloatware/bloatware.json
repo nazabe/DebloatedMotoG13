@@ -179,11 +179,6 @@
       "remove": true
     },
     {
-      "path": "system/app/WallpaperBackup",
-      "description": "",
-      "remove": true
-    },
-    {
       "path": "system/app/BasicDreams",
       "description": "",
       "remove": true
@@ -195,11 +190,6 @@
     },
     {
       "path": "system/app/ARCore",
-      "description": "",
-      "remove": true
-    },
-    {
-      "path": "system/priv-app/LiveWallpapersPicker",
       "description": "",
       "remove": true
     },
@@ -284,11 +274,6 @@
       "remove": false
     },
     {
-      "path": "system/priv-app/MotoCamera",
-      "description": "",
-      "remove": true
-    },
-    {
       "path": "system/priv-app/ManagedProvisioning",
       "description": "",
       "remove": true
@@ -333,11 +318,6 @@
     },
     {
       "path": "priv-app/GoogleFeedback",
-      "description": "",
-      "remove": true
-    },
-    {
-      "path": "priv-app/MotoLiveWallpaper3",
       "description": "",
       "remove": true
     },
